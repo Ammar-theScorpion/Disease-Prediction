@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import altair as alt
 from PIL import Image
-from AppOpener import run
+import subprocess
 
 image = Image.open('heart.jpeg')
 
@@ -90,4 +90,4 @@ st.sidebar.selectbox('Do you have kidney disease?', YN)
 st.sidebar.selectbox('Do you have skin cancer?', YN)
 
 if clicked_game:
-    run("main.py")
+    subprocess.call('main.exe')
