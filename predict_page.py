@@ -67,16 +67,18 @@ PH=[
 st.image(image, caption='Enter any caption here')
 st.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
 st.write('''### To predict your heart disease status:\n
-##1- Enter the parameters that best describe you.\n
-##2- Press the "Predict" button and wait for the result.''')
+###1- Enter the parameters that best describe you.\n
+###2- Press the "Predict" button and wait for the result.''')
 st.selectbox('Select your BMI', BMI)
 st.selectbox('Select your Age', AGE)
 st.selectbox('Select your Race', RACE)
 st.selectbox('Select your Gender', GENDER)
 st.selectbox('Have you smoked more than 100 cigarettes in your entire life ?)', YN)
+st.select_slider('Hours of sleep per 24h', 0,7)
 st.selectbox('How many drinks of alcohol do you have in a week?', YN)
+st.slider('Physical health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
+st.slider('Mental health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
 st.selectbox('Did you have a stroke?', YN)
-st.selectbox('Hours of sleep per 24h', PH)
 st.selectbox('Physical activity in the past month', YN)
 st.selectbox('Do you have serious difficulty walking or climbing stairs?', YN)
 st.selectbox('Have you ever had diabetes?', YN)
