@@ -74,7 +74,10 @@ st.selectbox('Select your Age', AGE)
 st.selectbox('Select your Race', RACE)
 st.selectbox('Select your Gender', GENDER)
 st.selectbox('Have you smoked more than 100 cigarettes in your entire life ?)', YN)
-st.select_slider('Hours of sleep per 24h', 0,7)
+sleep = st.select_slider(
+    'Select a color of the rainbow',
+    options=['0', '1', '2', '3', '4', '5', '6'])
+st.write('Hours of sleep per 24h', sleep)
 st.selectbox('How many drinks of alcohol do you have in a week?', YN)
 st.slider('Physical health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
 st.slider('Mental health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
