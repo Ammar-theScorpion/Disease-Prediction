@@ -64,9 +64,9 @@ PH=[
     'Very good',
     'Poor'
 ]
-st.sidebar.image(image, caption='Enter any caption here')
-st.sidebar.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
-st.sidebar.write('''### To predict your heart disease status:\n
+st.image(image, caption='Enter any caption here')
+st.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
+st.write('''### To predict your heart disease status:\n
 ###1- Enter the parameters that best describe you.\n
 ###2- Press the "Predict" button and wait for the result.''')
 st.sidebar.sidebar.selectbox('Select your BMI', BMI)
