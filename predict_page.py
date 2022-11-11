@@ -20,9 +20,9 @@ class ML:
             self.data = pickle.load(file)
  
     def start(self):
-        st.title('Heart Prediction')
+        st.sidebar.title('Heart Prediction')
 
-        st.write('''### we need some information to predict you state''')
+        st.sidebar.write('''### we need some information to predict you state''')
 
 BMI = [
     'Normal weight BMI (18.5-25)',
@@ -64,27 +64,27 @@ PH=[
     'Very good',
     'Poor'
 ]
-st.image(image, caption='Enter any caption here')
-st.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
-st.write('''### To predict your heart disease status:\n
+st.sidebar.image(image, caption='Enter any caption here')
+st.sidebar.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
+st.sidebar.write('''### To predict your heart disease status:\n
 ###1- Enter the parameters that best describe you.\n
 ###2- Press the "Predict" button and wait for the result.''')
-st.selectbox('Select your BMI', BMI)
-st.selectbox('Select your Age', AGE)
-st.selectbox('Select your Race', RACE)
-st.selectbox('Select your Gender', GENDER)
-st.selectbox('Have you smoked more than 100 cigarettes in your entire life ?)', YN)
-sleep = st.select_slider(
+st.sidebar.sidebar.selectbox('Select your BMI', BMI)
+st.sidebar.selectbox('Select your Age', AGE)
+st.sidebar.selectbox('Select your Race', RACE)
+st.sidebar.selectbox('Select your Gender', GENDER)
+st.sidebar.selectbox('Have you smoked more than 100 cigarettes in your entire life ?)', YN)
+sleep = st.sidebar.select_slider(
     'Select a color of the rainbow',
     options=['0', '1', '2', '3', '4', '5', '6'])
-st.write('Hours of sleep per 24h', sleep)
-st.selectbox('How many drinks of alcohol do you have in a week?', YN)
-st.slider('Physical health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
-st.slider('Mental health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
-st.selectbox('Did you have a stroke?', YN)
-st.selectbox('Physical activity in the past month', YN)
-st.selectbox('Do you have serious difficulty walking or climbing stairs?', YN)
-st.selectbox('Have you ever had diabetes?', YN)
-st.selectbox('Do you have asthma?', YN)
-st.selectbox('Do you have kidney disease?', YN)
-st.selectbox('Do you have skin cancer?', YN)
+st.sidebar.write('Hours of sleep per 24h', sleep)
+st.sidebar.selectbox('How many drinks of alcohol do you have in a week?', YN)
+st.sidebar.slider('Physical health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
+st.sidebar.slider('Mental health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
+st.sidebar.selectbox('Did you have a stroke?', YN)
+st.sidebar.selectbox('Physical activity in the past month', YN)
+st.sidebar.selectbox('Do you have serious difficulty walking or climbing stairs?', YN)
+st.sidebar.selectbox('Have you ever had diabetes?', YN)
+st.sidebar.selectbox('Do you have asthma?', YN)
+st.sidebar.selectbox('Do you have kidney disease?', YN)
+st.sidebar.selectbox('Do you have skin cancer?', YN)
