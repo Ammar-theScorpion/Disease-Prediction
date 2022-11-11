@@ -66,10 +66,10 @@ PH=[
 ]
 st.image(image, caption='Enter any caption here')
 st.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
-st.write('''### To predict your heart disease status:\n
-###1- Enter the parameters that best describe you.\n
-###2- Press the "Predict" button and wait for the result.''')
-st.sidebar.sidebar.selectbox('Select your BMI', BMI)
+st.write('''### To predict your heart disease status''') 
+st.write('''##1- Enter the parameters that best describe you.''')
+st.write('''##2- Press the "Predict" button and wait for the result.''')
+st.sidebar.selectbox('Select your BMI', BMI)
 st.sidebar.selectbox('Select your Age', AGE)
 st.sidebar.selectbox('Select your Race', RACE)
 st.sidebar.selectbox('Select your Gender', GENDER)
