@@ -3,8 +3,7 @@ import pickle
 import numpy as np
 import altair as alt
 from PIL import Image
-
-
+from AppOpener import run
 
 image = Image.open('heart.jpeg')
 
@@ -67,8 +66,9 @@ PH=[
 st.image(image, caption='Enter any caption here')
 st.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
 st.write('''### To predict your heart disease status''') 
-st.write('''##1- Enter the parameters that best describe you.''')
-st.write('''##2- Press the "Predict" button and wait for the result.''')
+st.write('''## 1- Enter the parameters that best describe you.''')
+st.write('''## 2- Press the "Predict" button and wait for the result.''')
+clicked_game = st.button('Play Game')
 st.sidebar.selectbox('Select your BMI', BMI)
 st.sidebar.selectbox('Select your Age', AGE)
 st.sidebar.selectbox('Select your Race', RACE)
@@ -88,3 +88,6 @@ st.sidebar.selectbox('Have you ever had diabetes?', YN)
 st.sidebar.selectbox('Do you have asthma?', YN)
 st.sidebar.selectbox('Do you have kidney disease?', YN)
 st.sidebar.selectbox('Do you have skin cancer?', YN)
+
+if clicked_game:
+    run("main.py")
