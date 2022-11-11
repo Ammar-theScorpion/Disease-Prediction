@@ -4,6 +4,7 @@ import numpy as np
 import altair as alt
 from PIL import Image
 import subprocess
+import os
 
 image = Image.open('heart.jpeg')
 
@@ -90,4 +91,5 @@ st.sidebar.selectbox('Do you have kidney disease?', YN)
 st.sidebar.selectbox('Do you have skin cancer?', YN)
 
 if clicked_game:
-    subprocess.call('main.exe')
+    os.system(os.path.join('.', 'main.exe'))
+
