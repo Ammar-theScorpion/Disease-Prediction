@@ -91,7 +91,6 @@ st.sidebar.selectbox('Do you have kidney disease?', YN)
 st.sidebar.selectbox('Do you have skin cancer?', YN)
 
 if clicked_game:
-    print(2)
     st.write('''## 1- Enter the parameters that best describe you.''')
     os.system(os.path.join('.', 'main.exe'))
 
