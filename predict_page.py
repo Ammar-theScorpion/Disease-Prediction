@@ -5,6 +5,7 @@ import altair as alt
 from PIL import Image
 import subprocess
 import os
+import pickle
 
 image = Image.open('heart.jpeg')
 
@@ -74,6 +75,13 @@ PH=[
     'Very good',
     'Poor'
 ]
+s=[
+    '5',
+    '6',
+    '7',
+    '8',
+    'more than 8'
+]
 st.image(image, caption='Enter any caption here')
 st.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
 st.write('''### To predict your heart disease status''') 
@@ -86,7 +94,7 @@ AGE =st.sidebar.selectbox('Select your Age', AGE)
 RACE =st.sidebar.selectbox('Select your Race', RACE)
 GENDER =st.sidebar.selectbox('Select your Gender', GENDER)
 SMIKE =st.sidebar.selectbox('Have you smoked more than 100 cigarettes in your entire life ?)', YN)
-heal =sleep = st.sidebar.select_slider(
+heal  = st.sidebar.select_slider(
     'Select a color of the rainbow',
     options=['0', '1', '2', '3', '4', '5', '6'])
 SLEEP = st.sidebar.write('Hours of sleep per 24h', sleep)
