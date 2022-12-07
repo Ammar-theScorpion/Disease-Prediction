@@ -74,6 +74,13 @@ PH=[
     'Very good',
     'Poor'
 ]
+s=[
+    '5',
+    '6',
+    '7',
+    '8',
+    'more than 8'
+]
 st.image(image, caption='Enter any caption here')
 st.write('''### In just a few seconds, you can calculate your risk of developing heart disease!''')
 st.write('''### To predict your heart disease status''') 
