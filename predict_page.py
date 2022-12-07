@@ -96,7 +96,7 @@ SMIKE =st.sidebar.selectbox('Have you smoked more than 100 cigarettes in your en
 heal  = st.sidebar.select_slider(
     'Select a color of the rainbow',
     options=['0', '1', '2', '3', '4', '5', '6'])
-SLEEP = st.sidebar.write('Hours of sleep per 24h', sleep)
+SLEEP = st.sidebar.write('Hours of sleep per 24h', s)
 DRINK =st.sidebar.selectbox('How many drinks of alcohol do you have in a week?', YN)
 Physical =st.sidebar.slider('Physical health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
 Mental =st.sidebar.slider('Mental health in the past month (Excelent: 0 - Very bad: 30)', 0, 30, 2)
