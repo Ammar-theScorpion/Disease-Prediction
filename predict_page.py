@@ -5,6 +5,7 @@ import altair as alt
 from PIL import Image
 import subprocess
 import os
+import pickle
 
 image = Image.open('heart.jpeg')
 
