@@ -5,9 +5,30 @@ import altair as alt
 from PIL import Image
 import subprocess
 import os
-import sklearn
 import pickle
-
+import pandas as pd
+import numpy as np
+import sklearn
+from sklearn import model_selection
+from sklearn.preprocessing import OneHotEncoder
+from imblearn.over_sampling import SMOTE
+from imblearn.pipeline import Pipeline, make_pipeline
+from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import precision_score, recall_score, f1_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+import matplotlib.pyplot as plt
+from sklearn.metrics import precision_score, recall_score
+from sklearn.model_selection import StratifiedKFold
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.preprocessing import OrdinalEncoder, LabelEncoder, StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import svm
+from sklearn import metrics
+import seaborn as sns
+import pickle
+from sklearn.metrics import roc_curve,roc_auc_score
 image = Image.open('heart.jpeg')
 
 def predict(input_data):
