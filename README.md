@@ -50,3 +50,4 @@ Train and Split:
 	The best one is ‘Logistic Regression’, with a recall of 0.65 and precision of 0.6297. With hyper parameter tuning, the recall improved by 0.264 so the total         recall is around 0.68.  Out of curiosity, I run the program against SVM with hyper parameter tuning I got a way better recall but was less precise. The 	             recall now is 0.629, since recall is the most important factor we stick to Logistic Regression.
 
 
+,
