@@ -1,4 +1,10 @@
 			                                         Heart Disease Prediction
+This project is a machine learning model that is designed to predict the likelihood of an individual developing heart disease based on a variety of factors. The model is trained on a large dataset of patient information, including demographics, medical history, and various health measurements such as blood pressure and cholesterol levels. Using advanced algorithms, the model is able to analyze this data and learn patterns that are associated with an increased risk of heart disease.
+
+Once trained, the model can be used to predict the risk of heart disease for a new individual by inputting their data into the model. This can be useful for doctors and other healthcare professionals in identifying individuals who may be at higher risk of developing heart disease and in need of preventative care. It can also be used by individuals themselves to help them understand their own risk of heart disease and take steps to reduce that risk.
+
+
+
 Data and features:
 Our data consists of around 300000 samples composed of both object and numeric data.
 ![Picture1](https://user-images.githubusercontent.com/79399411/207529511-424b97fe-f2e0-4adf-a1b8-1e8367a29139.png)
